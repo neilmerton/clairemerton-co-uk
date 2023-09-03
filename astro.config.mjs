@@ -8,5 +8,5 @@ export default defineConfig({
     viewTransitions: true,
   },
   integrations: [tailwind(), compress()],
-  site: 'https://clairemerton.co.uk',
+  site: 'https://www.clairemerton.co.uk',
 });
