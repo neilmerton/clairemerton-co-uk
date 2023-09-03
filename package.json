@@ -1,6 +1,6 @@
 {
-  "name": "astro-theme-stone",
-  "type": "module",
+  "name": "clairemerton-co-uk",
+  "packageManager": "pnpm@8.1.2",
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev -o",
