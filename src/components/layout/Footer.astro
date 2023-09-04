@@ -73,10 +73,7 @@ const bottomLinks = [
 ];
 ---
 
-<footer
-  class="bg-primary-500/10 dark:bg-primary-400/10 mt-16 py-16 lg:mt-20 lg:py-20"
-  aria-labelledby="footer-heading"
->
+<footer class="mt-16 bg-primary-500/10 py-16 dark:bg-primary-400/10 lg:mt-20 lg:py-20" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
@@ -86,13 +83,12 @@ const bottomLinks = [
           width="65"
           height="40"
           :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
+          alt="Claire Merton"
         />
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
+        <p class="text-base text-primary-950/70 dark:text-primary-200/70">
+          Claire Merton is a premium Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
+        <p class="text-sm text-primary-950/70 dark:text-primary-200/70">© 2023 Claire Merton</p>
       </div>
 
       <!-- Bottom links -->
@@ -106,7 +102,7 @@ const bottomLinks = [
                   <li>
                     <a
                       href={link.href}
-                      class="focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2"
+                      class="inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200"
                       target={link.isExternal ? '_blank' : undefined}
                       rel={link.isExternal ? 'noopener' : undefined}
                     >
