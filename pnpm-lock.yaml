@@ -6,37 +6,37 @@ settings:
 
 dependencies:
   '@alpinejs/collapse':
-    specifier: 3.13.0
+    specifier: ^3.13.0
     version: 3.13.0
   '@astrojs/tailwind':
-    specifier: 5.0.0
+    specifier: ^5.0.0
     version: 5.0.0(astro@3.0.7)(tailwindcss@3.3.3)
   '@fontsource/inter':
-    specifier: 5.0.8
+    specifier: ^5.0.8
     version: 5.0.8
   '@types/alpinejs':
-    specifier: 3.7.2
+    specifier: ^3.7.2
     version: 3.7.2
   alpinejs:
-    specifier: 3.13.0
+    specifier: ^3.13.0
     version: 3.13.0
   astro:
-    specifier: 3.0.7
+    specifier: ^3.0.7
     version: 3.0.7
   astro-compress:
-    specifier: 2.0.15
+    specifier: ^2.0.15
     version: 2.0.15
   prettier:
-    specifier: 3.0.3
+    specifier: ^3.0.3
     version: 3.0.3
   prettier-plugin-astro:
-    specifier: 0.12.0
+    specifier: ^0.12.0
     version: 0.12.0
   prettier-plugin-tailwindcss:
-    specifier: 0.5.4
+    specifier: ^0.5.4
     version: 0.5.4(prettier-plugin-astro@0.12.0)(prettier@3.0.3)
   tailwindcss:
-    specifier: 3.3.3
+    specifier: ^3.3.3
     version: 3.3.3
 
 packages:
