@@ -32,26 +32,11 @@ const stats = [
       <div class="flex flex-col gap-10">
         <!-- Mission description -->
         <div class="space-y-8 sm:space-y-12">
-          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">My mission</h2>
           <div class="space-y-6">
-            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
-              consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-              Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-              senectus vitae.
-            </p>
-            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem
-              nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet
-              quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis
-              elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
-              donec laoreet quam urna.
-            </p>
-            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies.
-              Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum
-              consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-              fermentum lacus in. Viverra.
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              To support business owners and leaders to create the conditions within the organisation where employees are,
+              competent, motivated, engaged, and understand the part they play in business in achieving results.
             </p>
           </div>
         </div>
@@ -60,7 +45,7 @@ const stats = [
         <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {
             stats.map((stat) => (
-              <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
+              <div class="rounded-3xl border border-primary-900/10 p-6 dark:border-primary-300/10">
                 <dt class="text-base">{stat.name}</dt>
                 <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
               </div>
