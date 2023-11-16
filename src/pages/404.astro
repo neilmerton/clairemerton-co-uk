@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LinkButton from '../components/base/LinkButton.astro';
 ---
 
 <Layout description="Page not found. Please check the URL in the address bar and try again." title="Not found · Claire Merton">
@@ -15,12 +16,7 @@ import Layout from '../layouts/Layout.astro';
             Please check the URL in the address bar and try again.
           </p>
         </div>
-        <a
-          href="/"
-          class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
-        >
-          Go back home
-        </a>
+        <LinkButton href="/">Go back home</LinkButton>
       </div>
     </div>
   </section>

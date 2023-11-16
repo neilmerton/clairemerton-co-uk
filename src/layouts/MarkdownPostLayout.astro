@@ -1,6 +1,8 @@
 ---
 import Layout from './Layout.astro';
+import LinkButton from '../components/base/LinkButton.astro';
 import Section from '../components/layout/Section.astro';
+
 const { frontmatter } = Astro.props;
 ---
 
@@ -14,11 +16,7 @@ const { frontmatter } = Astro.props;
     </article>
     <footer class="flex pt-8">
       <p>
-        <a
-          href="/blog"
-          class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
-          >Back to blog posts</a
-        >
+        <LinkButton href="/blog">Back to blog posts</LinkButton>
       </p>
     </footer>
   </Section>

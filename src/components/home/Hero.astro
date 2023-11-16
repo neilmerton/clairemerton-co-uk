@@ -4,24 +4,22 @@ import { Image } from 'astro:assets';
 
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="flex flex-col gap-16">
-      <div class="flex flex-col items-start gap-8 sm:gap-10">
-        <div class="flex max-w-xl flex-col items-start gap-4 sm:gap-6">
-          <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">People and Talent specialist</h1>
-          <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
-            As a HR consultant, my ability to "get" people is essential to business performance. This means understanding your
-            people's needs, motivations, and challenges, and being able to provide you with the support and guidance you need
-            for your business to succeed.
-          </p>
-        </div>
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+      <div class="flex max-w-xl flex-col items-start gap-4 sm:gap-6">
+        <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">People and Talent specialist</h1>
+        <p class="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
+          I am an experienced HR consultant with a passion for helping businesses achieve their goals through strategic people
+          management. With over 15 years of experience in the HR field, this has allowed me to work with a wide range of
+          businesses, from small startups to large enterprises.
+        </p>
+        <p class="text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+          I am committed to providing my clients with high-quality, personalised service. I take the time to understand your
+          unique business challenges and goals, and I develop customised solutions that meet your specific needs.
+        </p>
       </div>
-      <Image
-        class="h-auto w-full rounded-3xl"
-        width="1280"
-        height="640"
-        src="/assets/cm-landscape.webp"
-        alt="Photo of Claire Merton"
-      />
+      <div class="self-end">
+        <Image class="rounded-3xl" width="640" height="640" src="/assets/cm-square.webp" alt="Photo of Claire Merton" />
+      </div>
     </div>
   </div>
 </section>
