@@ -54,7 +54,7 @@ const features = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Expertise</h2>
+      <h2 class="text-3xl font-medium font-header tracking-tight sm:text-4xl">Expertise</h2>
       <div class="lg:col-span-2">
         <dl class="-mt-3" x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }">
           {
@@ -78,7 +78,7 @@ const features = [
                     x-bind:aria-expanded="isOpen.toString()"
                   >
                     <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
-                      <span class="font-medium">{feature.name}</span>
+                      <span class="font-medium font-header">{feature.name}</span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
                           class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"

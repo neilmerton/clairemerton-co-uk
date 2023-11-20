@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
 
 <Layout description={frontmatter.description} title={frontmatter.title}>
   <Section>
-    <article class="prose prose-stone dark:prose-invert lg:prose-xl">
+    <article class="prose prose-stone dark:prose-invert lg:prose-xl prose-headings:font-header prose-headings:font-medium prose-headings:tracking-tight">
       <h1>{frontmatter.title}</h1>
       <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
       <p>Written by {frontmatter.author}</p>
