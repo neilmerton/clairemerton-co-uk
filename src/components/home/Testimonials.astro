@@ -1,6 +1,11 @@
 ---
 const testimonials = [
   {
+    name: 'Kevin Fisher',
+    description: 'CPO',
+    message: '“Claire worked in the People team at Together for two and half years, during which time she made a great impression achieving colleague of the year in her first 12 months. Really good stakeholder management skills across all levels of the business.  She did a good job at coaching and mentoring colleagues, not only in the People team, but across the business. Sadly during the pandemic we had to downsize our workforce, which Claire managed and did a brilliant job during a very difficult time. Her technical knowledge, pragmatic approach and empathy with colleagues impacted was fantastic, I knew the whole process and our colleagues were in safe hands with Claire.  She embraced change and got the job done. You always knew when Claire was in the room, with her infectious personality and a real passion for people.”'
+  },
+  {
     name: 'Mark Goldberg',
     description: 'CEO',
     message:
@@ -25,10 +30,10 @@ const testimonials = [
   <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col items-center gap-12 lg:gap-20">
       <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">Trusted by business leaders</h2>
-      <div class="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
+      <div class="grid lg:grid-cols-2 gap-8">
         {
           testimonials.map((testimonial) => (
-            <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0">
+            <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
               <div class="flex flex-row gap-2">
                 {[...Array(3)].map(() => (
                   <svg
@@ -42,11 +47,11 @@ const testimonials = [
                   </svg>
                 ))}
               </div>
-              <blockquote class="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
+              <blockquote class="italic leading-loose text-primary-950/70 dark:text-primary-200/70">
                 <p>{testimonial.message}</p>
               </blockquote>
               <figcaption class="flex flex-col gap-4">
-                <div class="text-center">
+                <div>
                   <div class="text-base font-medium">{testimonial.name}</div>
                   <div class="text-sm text-primary-950/70 dark:text-primary-200/70">{testimonial.description}</div>
                 </div>
