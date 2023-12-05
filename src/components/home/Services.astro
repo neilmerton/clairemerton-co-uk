@@ -8,18 +8,24 @@ const services = [
   },
   {
     step: '02',
+    name: 'Portfolio HR Director support',
+    description:
+      'You may choose to take the plan and deliver on it with the resources you have internally, or I can help and support you deliver the plan, usually on a one day or two day per week basis. I can also check that you have everything in place; contracts, policies, and procedures to ensure that the people risks are effectively managed.',
+  },
+  {
+    step: '03',
     name: 'Recruitment',
     description:
       'Knowing your business from the diagnostic, I’ll help you find the right people for your team, whether that’s through a recruitment agency or directly.',
   },
   {
-    step: '03',
+    step: '04',
     name: 'Project delivery',
     description:
       'You may have a specific requirement due to a change in your business. I can help you deliver that project, whether it’s aquiring a new business, downsizing, restructuring or implementing technical changes.',
   },
   {
-    step: '04',
+    step: '05',
     name: 'Employee relations support',
     description:
       'To increase the capacity or capability in your team, I can offer support and guidence in any complicated employee relations cases, such as disciplinaries, grievances, performance management or sickness absence.',
@@ -30,13 +36,13 @@ const services = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
-      <h2 class="text-3xl font-medium font-header tracking-tight sm:text-4xl">Services</h2>
-      <div class="grid gap-8 lg:grid-cols-2">
+      <h2 class="font-header text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
+      <div class="grid gap-8 lg:px-20">
         {
           services.map((service) => (
-            <div class="flex flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+            <div class="flex gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
               <div class="flex flex-col gap-4">
-                <h3 class="text-xl font-medium font-header">{service.name}</h3>
+                <h3 class="font-header text-xl font-medium">{service.name}</h3>
                 <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">{service.description}</p>
               </div>
             </div>
