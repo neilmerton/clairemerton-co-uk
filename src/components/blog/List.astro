@@ -1,17 +1,19 @@
 ---
+import { formatDate } from '../../utils/date';
 import Section from '../layout/Section.astro';
 const allPosts = await Astro.glob('../../pages/posts/*.md');
 ---
 
 <Section>
   <div class="items-center justify-center rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10 lg:flex">
-    <ul class="flex list-disc flex-col gap-y-2">
+    <ul class="flex flex-col gap-y-2">
       {
         allPosts.map((post) => (
           <li>
-            <a class="flex px-3 py-2" href={post.url}>
+            <a class="flex px-3 py-2 font-medium" href={post.url}>
               {post.frontmatter.title}
             </a>
+            <span class="flex px-3 pb-2 text-sm">{formatDate(post.frontmatter.pubDate)}</span>
           </li>
         ))
       }
