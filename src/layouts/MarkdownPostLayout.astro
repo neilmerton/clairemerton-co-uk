@@ -10,7 +10,7 @@ const { frontmatter } = Astro.props;
 <Layout description={frontmatter.description} title={frontmatter.title}>
   <Section>
     <article
-      class="prose prose-stone dark:prose-invert lg:prose-xl prose-headings:font-header prose-headings:font-medium prose-headings:tracking-tight"
+      class="prose prose-stone mx-auto dark:prose-invert lg:prose-xl prose-headings:font-header prose-headings:font-medium prose-headings:tracking-tight"
     >
       <h1>{frontmatter.title}</h1>
       <div class="flex justify-between text-sm">
@@ -19,7 +19,7 @@ const { frontmatter } = Astro.props;
       </div>
       <slot />
     </article>
-    <footer class="flex pt-8">
+    <footer class="flex max-w-max pt-8">
       <p>
         <LinkButton href="/blog">Back to blog posts</LinkButton>
       </p>
