@@ -10,20 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@alpinejs/collapse": "^3.13.3",
-    "@astrojs/tailwind": "^5.0.3",
-    "@fontsource/inter": "^5.0.15",
-    "@fontsource/lexend": "^5.0.17",
-    "@types/alpinejs": "^3.13.5",
-    "alpinejs": "^3.13.3",
-    "astro": "^4.0.1",
-    "astro-compress": "^2.2.3",
-    "prettier": "^3.1.0",
-    "prettier-plugin-astro": "^0.12.2",
-    "prettier-plugin-tailwindcss": "^0.5.8",
-    "tailwindcss": "^3.3.6"
+    "@alpinejs/collapse": "^3.14.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/inter": "^5.0.18",
+    "@fontsource/lexend": "^5.0.20",
+    "@types/alpinejs": "^3.13.10",
+    "alpinejs": "^3.14.0",
+    "astro": "^4.8.6",
+    "astro-compress": "^2.2.23",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10"
+    "@tailwindcss/typography": "^0.5.13"
   }
 }
