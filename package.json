@@ -1,6 +1,6 @@
 {
   "name": "clairemerton-co-uk",
-  "packageManager": "pnpm@8.1.2",
+  "packageManager": "pnpm@10.4.1",
   "version": "1.0.1",
   "scripts": {
     "dev": "astro dev --open",
