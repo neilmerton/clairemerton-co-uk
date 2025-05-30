@@ -1,3 +1,4 @@
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 import compress from 'astro-compress';
 
@@ -8,4 +9,7 @@ export default defineConfig({
     port: 3030,
   },
   site: 'https://www.clairemerton.co.uk',
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });
