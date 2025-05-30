@@ -2,7 +2,7 @@
 import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-500.css';
 import '@fontsource/lexend/500.css';
-import { ViewTransitions } from 'astro:transitions';
+import '../styles/global.css';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
 
@@ -24,9 +24,8 @@ const { description, title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <ViewTransitions />
   </head>
-  <body class="bg-primary-50 text-primary-950 antialiased transition dark:bg-primary-950 dark:text-primary-200">
+  <body class="bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-200 antialiased transition">
     <Header />
     <main>
       <slot />
