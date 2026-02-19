@@ -3,7 +3,8 @@ const testimonials = [
   {
     name: 'Kevin Fisher',
     description: 'CPO',
-    message: '“Claire worked in the People team at Together for two and half years, during which time she made a great impression achieving colleague of the year in her first 12 months. Really good stakeholder management skills across all levels of the business.  She did a good job at coaching and mentoring colleagues, not only in the People team, but across the business. Sadly during the pandemic we had to downsize our workforce, which Claire managed and did a brilliant job during a very difficult time. Her technical knowledge, pragmatic approach and empathy with colleagues impacted was fantastic, I knew the whole process and our colleagues were in safe hands with Claire.  She embraced change and got the job done. You always knew when Claire was in the room, with her infectious personality and a real passion for people.”'
+    message:
+      '“Claire worked in the People team at Together for two and half years, during which time she made a great impression achieving colleague of the year in her first 12 months. Really good stakeholder management skills across all levels of the business.  She did a good job at coaching and mentoring colleagues, not only in the People team, but across the business. Sadly during the pandemic we had to downsize our workforce, which Claire managed and did a brilliant job during a very difficult time. Her technical knowledge, pragmatic approach and empathy with colleagues impacted was fantastic, I knew the whole process and our colleagues were in safe hands with Claire.  She embraced change and got the job done. You always knew when Claire was in the room, with her infectious personality and a real passion for people.”',
   },
   {
     name: 'Mark Goldberg',
@@ -27,17 +28,19 @@ const testimonials = [
 ---
 
 <section class="py-16 sm:py-20">
-  <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+  <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col items-center gap-12 lg:gap-20">
-      <h2 class="mx-auto max-w-xl text-center text-3xl font-medium font-header tracking-tight sm:text-4xl">Trusted by business leaders</h2>
-      <div class="grid lg:grid-cols-2 gap-8">
+      <h2 class="font-header mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
+        Trusted by business leaders
+      </h2>
+      <div class="grid gap-8 lg:grid-cols-2">
         {
           testimonials.map((testimonial) => (
-            <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+            <figure class="bg-primary-500/10 mx-auto flex max-w-lg flex-col items-center gap-6 rounded-3xl px-6 py-8">
               <div class="flex flex-row gap-2">
                 {[...Array(3)].map(() => (
                   <svg
-                    class="h-6 w-6 text-primary-600 dark:text-primary-400"
+                    class="text-primary-600 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -47,13 +50,13 @@ const testimonials = [
                   </svg>
                 ))}
               </div>
-              <blockquote class="italic leading-loose text-primary-950/70 dark:text-primary-200/70">
+              <blockquote class="text-primary-950/70 leading-loose italic">
                 <p>{testimonial.message}</p>
               </blockquote>
               <figcaption class="flex flex-col gap-4">
                 <div>
                   <div class="text-base font-medium">{testimonial.name}</div>
-                  <div class="text-sm text-primary-950/70 dark:text-primary-200/70">{testimonial.description}</div>
+                  <div class="text-primary-950/70 text-sm">{testimonial.description}</div>
                 </div>
               </figcaption>
             </figure>
