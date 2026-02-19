@@ -40,10 +40,10 @@ const services = [
       <div class="grid gap-8 lg:px-20">
         {
           services.map((service) => (
-            <div class="flex gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+            <div class="bg-primary-500/10 flex gap-12 rounded-3xl px-6 py-8">
               <div class="flex flex-col gap-4">
                 <h3 class="font-header text-xl font-medium">{service.name}</h3>
-                <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">{service.description}</p>
+                <p class="text-primary-950/70 text-base sm:text-lg">{service.description}</p>
               </div>
             </div>
           ))
