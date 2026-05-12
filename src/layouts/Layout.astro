@@ -36,7 +36,6 @@ const { description, title } = Astro.props;
         display: none !important;
       }
     </style>
-    <script async is:inline src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <script>
       import Alpine from 'alpinejs';
       import collapse from '@alpinejs/collapse';
@@ -46,5 +45,7 @@ const { description, title } = Astro.props;
       window.Alpine = Alpine;
       Alpine.start();
     </script>
+    <script defer is:inline src="https://cloud.umami.is/script.js" data-website-id="9d2247f1-2349-460d-836e-dce363e6d3ef"
+    ></script>
   </body>
 </html>
